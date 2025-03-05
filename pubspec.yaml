@@ -44,6 +44,12 @@ dependencies:
   sqflite: ^2.3.3+1
   http: ^1.2.2
   dio: ^5.8.0+1
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/img/book.jpg" # Path to your icon
 
 dev_dependencies:
   flutter_test:
@@ -68,18 +74,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/img/pro-background.png
-    - assets/img/onboard-background.png
-    - assets/img/logo-android.png
-    - assets/img/logo-ios.png
-    - assets/img/logo-argon.png
-    - assets/img/profile-screen-avatar.jpg
-    - assets/img/profile-screen-bg.png
-    - assets/img/register-bg.png
-    - assets/img/chat-avatar.jpeg
-    - assets/img/argon-logo.png
-    - assets/img/argon-logo-onboarding.png
+  #assets:
+
 
   fonts:
       - family: OpenSans

@@ -30,7 +30,7 @@ class _SignupPageState extends State<SignupPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Sign Up")),
+      appBar: AppBar(title: Center(child: Text("Sign Up"))),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Form(
@@ -125,9 +125,14 @@ class _SignupPageState extends State<SignupPage> {
               // Signup Button
               ElevatedButton(
                 onPressed: _signup,
-                child: Text("Sign Up"),
+                child: Text("Sign Up", style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),),
                 style: ElevatedButton.styleFrom(
-                  minimumSize: Size(double.infinity, 50), // Full-width button
+                  minimumSize: Size(double.infinity, 50),
+                  backgroundColor: Colors.blue[900]// Full-width button
                 ),
               ),
 

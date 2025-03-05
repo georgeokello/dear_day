@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Login")),
+      appBar: AppBar(title: Center(child: Text("D.E.A.R DAY"))),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Form(
@@ -92,9 +92,14 @@ class _LoginPageState extends State<LoginPage> {
               // Login Button
               ElevatedButton(
                 onPressed: _login,
-                child: Text("Login"),
+                child: Text("Login", style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),),
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(double.infinity, 50), // Full-width button
+                  backgroundColor: Colors.blue[900],
                 ),
               ),
 
